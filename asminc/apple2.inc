@@ -50,15 +50,31 @@ LCBANK2 :=      $C083   ; Swap in LC bank 2
 LCBANK1 :=      $C08B   ; Swap in LC bank 1
 
 ; Video mode switches
-TXTCLR  :=      $C050   ; Display graphics
-TXTSET  :=      $C051   ; Display text
-MIXCLR  :=      $C052   ; Disable 4 lines of text
-MIXSET  :=      $C053   ; Enable 4 lines of text
-LOWSCR  :=      $C054   ; Page 1
-HISCR   :=      $C055   ; Page 2
-LORES   :=      $C056   ; Lores graphics
-HIRES   :=      $C057   ; Hires graphics
+TXTCLR     :=   $C050   ; Display graphics
+TXTSET     :=   $C051   ; Display text
+MIXCLR     :=   $C052   ; Disable 4 lines of text
+MIXSET     :=   $C053   ; Enable 4 lines of text
+LOWSCR     :=   $C054   ; Page 1
+HISCR      :=   $C055   ; Page 2
+LORES      :=   $C056   ; Lores graphics
+HIRES      :=   $C057   ; Hires graphics
+DHIRESON   :=   $C05E   ; Enable double-width graphics
+DHIRESOFF  :=   $C05F   ; Disable double-width graphics
 
 ; Game controller
-BUTN0   :=      $C061   ; Open-Apple Key
-BUTN1   :=      $C062   ; Closed-Apple Key
+TAPEIN  :=      $C060   ; Read casette input / Switch input 3
+BUTN0   :=      $C061   ; Switch input 0 / Open-Apple key
+BUTN1   :=      $C062   ; Switch input 1 / Closed-Apple key
+BUTN2   :=      $C063   ; Switch input 2 / Shift key
+PADDL0  :=      $C064   ; Analog input 0
+PADDL1  :=      $C065   ; Analog input 1
+PADDL2  :=      $C066   ; Analog input 2
+PADDL3  :=      $C067   ; Analog input 3
+PTRIG   :=      $C070   ; Analog input reset
+
+; Input/Output Unit
+IOUDISON   :=   $C07E   ; Disable IOU
+IOUDISOFF  :=   $C07F   ; Enable IOU
+
+; Control Your Apple
+CYAREG  :=      $C036   ; Bits 0-3=disk detect 4=shadow all banks 7=fast
